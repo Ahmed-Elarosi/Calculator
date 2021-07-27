@@ -1,0 +1,64 @@
+:root {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border-radius: 0.25rem;
+  font-family: "Zen Tokyo Zoo", cursive;
+  font-weight: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, rgb(0, 170, 255), rgb(223, 119, 223));
+}
+
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 10rem);
+  grid-template-rows: minmax(12rem, auto) repeat(5, 10rem);
+}
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 4rem;
+  border: 0.1rem solid whitesmoke;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.calculator-grid > button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1/-1;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 1rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 3.5rem;
+}
+.output .current-operand {
+  color: rgba(255, 255, 255);
+  font-size: 5rem;
+}
