@@ -7,7 +7,7 @@
 *::after {
   box-sizing: border-box;
   border-radius: 0.25rem;
-  font-family: 'Courier New', Courier, monospace
+  font-family: "Courier New", Courier, monospace;
   font-weight: normal;
 }
 
