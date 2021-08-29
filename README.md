@@ -1,4 +1,4 @@
-# This is a vanilla JS small project
+# This is a vanilla JS project
 
 =======
 
